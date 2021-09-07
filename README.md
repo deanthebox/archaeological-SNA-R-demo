@@ -21,4 +21,5 @@ attribution to Timothy James Vitales requested in reuse
 ### Credit authorship contribution statement
 
 **Dean Anthony Arcega:** Code, analysis 
+
 **Timothy James Vitales:** Dataset, analysis
