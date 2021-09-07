@@ -5,7 +5,7 @@ This demo features an affiliation network between foreign tradeware classes and 
 
 Detailed site info can be found in: 
 
-> [Timothy James Vitales, (2013). Archaeological Research in the Laguna de Bay area, Philippines](https://www.academia.edu/5490456/Archaeological_Research_in_the_Laguna_de_Bay_area_Philippines)
+> [Timothy James Vitales, (2013). Archaeological Research in the Laguna de Bay area, Philippines. *Hukay 18.*](https://www.academia.edu/5490456/Archaeological_Research_in_the_Laguna_de_Bay_area_Philippines)
 
 ### How to cite
 
