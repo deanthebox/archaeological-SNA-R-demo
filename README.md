@@ -1,11 +1,30 @@
 # archaeological SNA R demo
  A quick demo of archaeological social network analysis in R
 
-This demo features an affiliation network between foreign tradeware classes and sites along Laguna de Bay and Pasig River.
-
-Detailed site info can be found in: 
+This demo features an affiliation network between foreign tradeware classes and sites along Laguna de Bay and Pasig River. Detailed site info can be found in: 
 
 > [Timothy James Vitales, (2013). Archaeological Research in the Laguna de Bay area, Philippines. *Hukay 18.*](https://www.academia.edu/5490456/Archaeological_Research_in_the_Laguna_de_Bay_area_Philippines)
+
+### Abbreviation Key
+TW - Tradeware
+
+Qbai - Qingbai spotted
+
+brclt - bracelet
+
+
+cel - celadon
+
+Br - Bronze
+
+Gl - Glass
+
+
+util - utilitarian
+
+misc - miscellaneous
+
+orn - ornamental
 
 ### How to cite
 

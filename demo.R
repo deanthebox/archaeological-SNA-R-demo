@@ -6,9 +6,8 @@
 
 rm(list=ls())
 
-# #Run this if the packages are not yet installed
-# install.packages(c("igraph", "ggraph", 
-#                    "tidyverse", "tidygraph"))
+#Run this if the packages are not yet installed
+install.packages(c("igraph", "ggraph", "tidyverse", "tidygraph"))
 
 library(igraph)
 library(ggraph)
@@ -18,10 +17,12 @@ library(tidyverse)
 #You might need to run this to change the working directory. 
 #Change directory to where you cloned the repository.
 setwd("C:/Users/Dean/Documents/GitHub/archaeological-SNA-R-demo")
+#Use "/" or "\\" instead of "\" (R does not read lone backslashes)
 
 # Read our prepared matrix ------------------------------------------------
-#This dataset is co-occurence of foreign tradeware ceramics in the 
-#Laguna de Bay and Pasig river area
+
+#This dataset is co-occurence of foreign tradeware ceramics among
+#sites in the Laguna de Bay and Pasig river area
 
 matrix <- read_csv("laguna_pasig_foreign_tradeware.csv")
 
@@ -44,6 +45,9 @@ network
 
 #Let's visualize it
 plot(network) #Run this again. Notice how the spacing is randomized.
+
+
+# Querying Network Attributes and Centrality Measures ---------------------
 
 #This object has many attributes. We can query them:
 V(network)$name 
@@ -74,7 +78,7 @@ closeness(network) #reciprocal of average distance to all nodes
 cor.test(degree(network), eigen_centrality(network)$vector)
 cor.test(betweenness(network), closeness(network))
 
-# Customize our visualization -----------------------------------------------------
+# Exploratory visualization -----------------------------------------------------
 
 #Circles for sites, squares for artifacts
 V(network)$shape <- ifelse(V(network)$type == FALSE, "circle", "square")
@@ -109,7 +113,7 @@ plot(network,
 
 #Notice how the two different modes are highlighted
 
-# Custom visualization ----------------------------------------------------
+# Visualization for Publications ----------------------------------------------------
 #The neater you want it to look, the more you have to code...
 my_graph <- ggraph(network) + 
     geom_edge_link(edge_colour="black", edge_alpha=0.3, edge_width=0.2) +
